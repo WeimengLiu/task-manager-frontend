@@ -1,5 +1,5 @@
 {
-  "name": "auto-link2",
+  "name": "task-manager-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,7 @@
     "axios": "^1.6.7",
     "element-plus": "^2.5.6",
     "mockjs": "^1.1.0",
+    "monaco-editor": "^0.52.2",
     "pinia": "^2.1.7",
     "vue": "^3.5.13",
     "vue-router": "^4.2.5",

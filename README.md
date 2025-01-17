@@ -1,6 +1,6 @@
-# Auto Link 2
+# Task Manager Frontend
 
-一个基于 Vue 3 的软链接同步管理系统，用于管理和自动化文件同步任务。通过创建软链接，实现文件的自动同步。
+一个基于 Vue 3 的任务管理前端，用于管理和自动化文件同步任务。通过创建软链接，实现文件的自动同步。
 
 ## 功能特性
 
@@ -25,7 +25,7 @@
 - Pinia 2.1.7
 - MockJS 1.1.0
 - Vue3CronPlusPicker 1.0.2
-
+- Monaco Editor 0.52.2
 ## 安装依赖
 
 ```bash

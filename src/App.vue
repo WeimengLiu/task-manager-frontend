@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-import { HomeFilled, Connection, Fold, Expand } from '@element-plus/icons-vue'
+import { HomeFilled, Connection, Fold, Expand, Document } from '@element-plus/icons-vue'
+import { useRoute } from 'vue-router'
 
 const isCollapse = ref(false)
+const route = useRoute()
 </script>
 
 <template>
@@ -45,6 +47,10 @@ const isCollapse = ref(false)
           <el-menu-item index="/tasks">
             <el-icon><Connection /></el-icon>
             <span>软连接同步</span>
+          </el-menu-item>
+          <el-menu-item index="/remote-tasks">
+            <el-icon><Document /></el-icon>
+            <span>远程任务</span>
           </el-menu-item>
         </el-menu>
       </el-aside>

@@ -40,6 +40,31 @@ export const api = {
     getDirs(path) {
       return request.get('/dir/getdirs', { params: { path } })
     }
+  },
+
+  // 远程任务相关
+  remoteTask: {
+    getList() {
+      return request.get('/remoteTasks/list')
+    },
+    start(id) {
+      return request.post(`/remoteTasks/start/${id}`)
+    },
+    stop(id) {
+      return request.post(`/remoteTasks/stop/${id}`)
+    },
+    execute(id) {
+      return request.post(`/remoteTasks/execute/${id}`)
+    },
+    delete(id) {
+      return request.delete(`/remoteTasks/delete/${id}`)
+    },
+    add(data) {
+      return request.post('/remoteTasks/add', data)
+    },
+    update(data) {
+      return request.post('/remoteTasks/update', data)
+    }
   }
 }
 
